@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif, 'poppins';
+    box-sizing: border-box;
+    color: antiquewhite;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .baner {
+    width: 60%;
+    padding: 9px;
+  }
+  
+  .body {
+    display: flex;
+    justify-self:flex-start;
+  }
+  
+  .siterbar {
+    width: 30%;
+    border-right: 2px solid #009b01;
+    height:880px;
+    overflow-y: auto; /* Bổ sung để có thanh cuộn nếu nội dung quá dài */
+  }
+  
+  .inside {
+    margin: 10px;
+    padding-left: 5px;
+    list-style-type: none;
+    background-color: aliceblue;
+    border-right: 10px outset rgba(208, 195, 195, 0.251);
+    border-bottom: 10px outset rgba(215, 202, 202, 0.5);
+    border-top: 10px outset aliceblue;
+    border-left: 10px outset aliceblue;
+    backdrop-filter: blur(10px);
+  }
+  .inside li {
+    padding-bottom: 5px;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 50px;
+    padding-left: 10px;
+    font-weight: 700;
+    background-color: #009b01;
+    width: 80%;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+  
+  .footer {
+    border-top: 4px double green    ;
+    width: 100%;
+    margin-top: -82px; /* Đặt margin-top:auto để đẩy footer xuống cuối trang */
+  }
+  .parent{
+    position: relative;
+
+}
+.subnav{
+    display: none;
+    background-color: rgb(87, 87, 87);
+    position: absolute;
+    bottom: -80px;
+    list-style-type: none;
+    
+}
+ .parent:hover > .subnav{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+}

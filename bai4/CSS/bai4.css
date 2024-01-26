@@ -1,0 +1,44 @@
+#title2{
+border: 4px inset rgb(188, 188, 188);
+width: 17vh;
+background-color: blanchedalmond;
+position:absolute ;
+top:20vh;
+left: 120vh;
+}
+#title{
+    border: 4px inset rgb(188, 188, 188);
+    width: 17vh;
+    background-color: blanchedalmond;
+    position:absolute ;
+    top:50vh;
+    left: 73vh;
+    }
+
+    #title3{
+        border: 4px inset rgb(188, 188, 188);
+        width: 17vh;
+        background-color: blanchedalmond;
+        position:absolute ;
+        top: 70vh;
+        left: 115vh;
+        }
+        .div1{
+            position: relative;
+        }
+        .div2{
+            position: absolute;
+            display: none;
+            bottom: -100px;
+            background-image: url('../images/back.jpg');
+            list-style-type:none;
+
+        }
+        .div1:hover .div2{
+            display: block;
+            flex-direction: column;
+            width: 80px;
+            font-size: 160%;
+            left: 150px;
+
+        }
